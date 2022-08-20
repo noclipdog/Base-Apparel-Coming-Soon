@@ -123,3 +123,77 @@ p{
 .submit:hover{
     cursor: pointer;
 }
+
+.hero-desktop{
+    display: none;
+    height: 100%;
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        font-size: 16px;
+    }
+
+    .base-apparel-component{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .left-side{
+        width: 830px;
+        height: 800px;
+        background: url(./images/bg-pattern-desktop.svg);
+
+    }
+
+    header{
+        padding-left: 165px;
+        padding-top: 66px;
+        padding-bottom: 0;
+    }
+
+    .component-contents{
+        justify-content: left;
+        align-items: left;
+        padding-left: 165px;
+        padding-right: 220px;
+        margin-top: 130px;
+        margin-bottom: 162px;
+    }
+
+    h1{
+        text-align: left;
+        font-size: 64px;
+        line-height: 68px;
+        letter-spacing: auto;
+        margin-left: -54px;
+    }
+    p{
+        text-align: left;
+        margin-top: 20px;
+        line-height: 170%;
+    }
+
+    .hero-mobile{
+        display: none;
+    }
+
+    .hero-desktop{
+        display: block;
+    }
+
+    .input-field{
+        height: 56px;
+    }
+
+    .email{
+        padding-left: 30px;
+        font-size: 16px;
+    }
+
+    .submit{
+        width: 100px;
+        height: 56px;
+    }
+}
